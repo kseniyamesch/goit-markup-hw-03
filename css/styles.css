@@ -1,0 +1,330 @@
+:root {
+    --accent-color: #2196F3;
+    --primary-title-color: #212121;
+    --secondary-title-color: #FFFFFF;
+    --header-color: #000000;
+    --primary-text-color: #757575;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif ;
+    color: var(--primary-text-color);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+}
+
+.logo {
+    margin-right: 93px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.primary-logo-color {
+    color: var(--header-color);
+}
+.btn {
+    background-color: var(--accent-color);
+    border: 1 px solid transparent ;
+border-radius: 4px;
+}
+/* ...................................header.................................... */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+   
+}
+.main-nav {
+    display: flex;
+    align-items: center
+}
+.header-item { 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+.header-item:not(:last-child) {
+margin-right: 50px;}
+
+.header-link {
+    color: var(--primary-title-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+}
+.current {
+    color: var(--accent-color);
+}
+
+.header-list {
+    display: flex;
+}
+.header-link:hover, .header-link:focus {
+ color: var(--accent-color);   
+}
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+
+}
+.header-contacts-link {
+    color: var(--primary-text-color);
+
+}
+.header-contacts-link:hover, .header-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* ...................................hero-main.................................... */
+.hero {
+    background-color: #2F303A;
+}
+.hero-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+    margin-bottom: 30px;
+}
+.hero-btn {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    color: var(--secondary-title-color);
+    cursor: pointer;
+
+}
+
+/*..................................... advantages.................................. */
+.advantage-header {
+    font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-title-color);
+}
+.advantage-text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+}
+
+.advantages-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+.advantage-item:not(:last-child) {
+margin-right: 30px;
+}
+/*..................................... activity.................................. */
+
+.main-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color);}
+    
+    .activity {
+        margin-bottom: 50px;
+    }
+
+.activity-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.activity-item:not(:last-child) {
+margin-right: 30px;
+}
+    /*................................... team ...................................*/
+    .main-title {
+        padding-top: 94px;
+        margin-bottom: 50px;
+    }
+    .team-list {
+        display: flex;
+        padding-bottom: 94px;
+    }
+
+    .team-item:not(:last-child) {
+margin-right: 30px;
+    }
+.team-img {
+    margin-bottom: 30px;
+}
+.team-title {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-title-color);
+margin-bottom: 10px;
+}
+.team-text {
+    font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+padding-bottom: 30px;
+}
+/* .......................................footer ..................................*/
+.logo-footer {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.address {
+    font-style: normal;
+    font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--secondary-title-color);
+margin-bottom: 9px;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer {
+    background-color:  #2F303A;
+}
+.footer-link:focus, .footer-link:hover {
+    color: var(--accent-color);
+}
+.secondary-logo-color {
+    color: var(--secondary-title-color);
+}
+.footer-list {
+    padding-bottom: 60px;
+} 
+/* .....................................portfolio-buttons............................ */
+.portfolio-btn-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.portfolio-btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+.portfolio-btn {
+
+    font-family: Roboto;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-title-color);
+cursor: pointer;
+}
+
+}
+.portfolio-btn:hover, .portfolio-btn:focus {
+    color: var(--secondary-title-color)
+}
+/* ...................................projecrs .........................*/
+.project-item {
+    width: 370px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-basis: (100%-60px)/3; */
+}
+/* .projects-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+} 
+
+.projects-item:nth-child(3n) {
+    margin-right: 0px;
+} */
+.projects-img {
+    margin-bottom: 20px;
+}
+.
+.project-title {
+    font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
+letter-spacing: 0.06em;
+
+color: var(--primary-title-color);
+
+margin-bottom: 4px;
+}
+.project-text {
+    font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+padding-bottom: 20px;
+}
