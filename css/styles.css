@@ -26,6 +26,14 @@ ul {
 body {
     font-family: Roboto, sans-serif ;
     color: var(--primary-text-color);
+
+}
+
+.btn {
+    background-color: var(--accent-color);
+    border: 1px solid transparent;
+border-radius: 4px;
+
 }
 .visually-hidden {
     position: absolute;
@@ -61,11 +69,7 @@ margin: 0 auto;
 .primary-logo-color {
     color: var(--header-color);
 }
-.btn {
-    background-color: var(--accent-color);
-    border: 1 px solid transparent ;
-border-radius: 4px;
-}
+
 /* ...................................header.................................... */
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -122,6 +126,7 @@ margin-right: 50px;}
 /* ...................................hero-main.................................... */
 .hero {
     background-color: #2F303A;
+
 }
 .hero-header {
     font-weight: 900;
@@ -144,7 +149,6 @@ margin-right: 50px;}
     letter-spacing: 0.06em;
     color: var(--secondary-title-color);
     cursor: pointer;
-
 }
 
 /*..................................... advantages.................................. */
@@ -156,6 +160,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-title-color);
+margin-bottom: 10px;
 }
 .advantage-text {
 font-size: 14px;
@@ -283,48 +288,52 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-title-color);
+background-color:  #F5F4FA;
 cursor: pointer;
 }
-
-}
 .portfolio-btn:hover, .portfolio-btn:focus {
-    color: var(--secondary-title-color)
+    color: var(--secondary-title-color);
+    background-color: var(--accent-color);
 }
+
 /* ...................................projecrs .........................*/
-.project-item {
-    width: 370px;
+.project-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em; 
+    padding-bottom: 20px;
 }
 
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    /* flex-basis: (100%-60px)/3; */
+    flex-basis: calc(100%/3-30px);
+padding-bottom: 95px;
 }
-/* .projects-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+.projects-item {
+    border: 1px solid #ECECEC;
+margin-right: 30px;
 } 
 
 .projects-item:nth-child(3n) {
     margin-right: 0px;
-} */
+}
+
+
+
 .projects-img {
     margin-bottom: 20px;
 }
-.
-.project-title {
-    font-weight: 700;
+
+.title-for-projects {
+ font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
+color: var(--header-color) }
 
 color: var(--primary-title-color);
 
 margin-bottom: 4px;
 }
-.project-text {
-    font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-padding-bottom: 20px;
-}
+
