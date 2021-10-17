@@ -307,7 +307,7 @@ cursor: pointer;
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100%/3-30px);
+    flex-basis: calc(100% / 3 - 30px);
 padding-bottom: 95px;
 }
 .projects-item {
@@ -331,9 +331,6 @@ font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--header-color) }
-
-color: var(--primary-title-color);
-
 margin-bottom: 4px;
 }
 
