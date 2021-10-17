@@ -307,11 +307,12 @@ cursor: pointer;
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3 - 30px);
+    
 padding-bottom: 95px;
 }
 .projects-item {
-    border: 1px solid #ECECEC;
+    flex-basis: calc(100% / 3 - 30px);
+    border-bottom: 1px solid #ECECEC;
 margin-right: 30px;
 } 
 
@@ -330,7 +331,5 @@ margin-right: 30px;
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
-color: var(--header-color) }
-margin-bottom: 4px;
-}
-
+color: var(--header-color); 
+margin-bottom: 4px; }
