@@ -126,6 +126,8 @@ margin-right: 50px;}
 /* ...................................hero-main.................................... */
 .hero {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 .hero-header {
@@ -137,21 +139,28 @@ margin-right: 50px;}
     text-transform: uppercase;
     color: var(--secondary-title-color);
     margin-bottom: 30px;
+
 }
 .hero-btn {
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    width: 200px;
     display: block;
     margin: 0 auto;
     letter-spacing: 0.06em;
     color: var(--secondary-title-color);
     cursor: pointer;
+    padding: 10px 32px;
+
 }
 
 /*..................................... advantages.................................. */
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .advantage-header {
     font-family: Roboto;
 font-weight: 700;
@@ -170,16 +179,18 @@ color: var(--primary-text-color);
 }
 
 .advantages-list {
-    display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
+    display: flex; 
+}
+.advantage-item {
+    width: 270px;
 }
 .advantage-item:not(:last-child) {
 margin-right: 30px;
 }
 /*..................................... activity.................................. */
-
+.activity-section {
+    padding-bottom: 94px;
+}
 .main-title {
     font-weight: 700;
     font-size: 36px;
@@ -194,28 +205,30 @@ margin-right: 30px;
 
 .activity-list {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .activity-item:not(:last-child) {
 margin-right: 30px;
 }
     /*................................... team ...................................*/
+    .team-section {
+padding-bottom: 94px;
+    }
+
     .main-title {
-        padding-top: 94px;
         margin-bottom: 50px;
     }
     .team-list {
         display: flex;
-        padding-bottom: 94px;
     }
-
+.team-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
     .team-item:not(:last-child) {
 margin-right: 30px;
     }
-.team-img {
-    margin-bottom: 30px;
-}
+
 .team-title {
     font-weight: 500;
 font-size: 16px;
@@ -231,12 +244,10 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
-padding-bottom: 30px;
 }
 /* .......................................footer ..................................*/
 .logo-footer {
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 .address {
@@ -259,6 +270,8 @@ margin-bottom: 9px;
 }
 .footer {
     background-color:  #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-link:focus, .footer-link:hover {
     color: var(--accent-color);
@@ -266,15 +279,17 @@ margin-bottom: 9px;
 .secondary-logo-color {
     color: var(--secondary-title-color);
 }
-.footer-list {
-    padding-bottom: 60px;
-} 
+
 /* .....................................portfolio-buttons............................ */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-bottom: -30px;
+}
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .portfolio-btn-item:not(:last-child) {
     margin-right: 8px;
@@ -290,41 +305,37 @@ letter-spacing: 0.03em;
 color: var(--primary-title-color);
 background-color:  #F5F4FA;
 cursor: pointer;
+padding: 6px 22px;
 }
 .portfolio-btn:hover, .portfolio-btn:focus {
     color: var(--secondary-title-color);
     background-color: var(--accent-color);
 }
 
-/* ...................................projecrs .........................*/
+/* ...................................projects .........................*/
 .project-text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em; 
-    padding-bottom: 20px;
 }
 
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    
-padding-bottom: 95px;
 }
 .projects-item {
     flex-basis: calc(100% / 3 - 30px);
-    border-bottom: 1px solid #ECECEC;
 margin-right: 30px;
+margin-bottom: 30px;
 } 
 
 .projects-item:nth-child(3n) {
     margin-right: 0px;
 }
-
-
-
 .projects-img {
-    margin-bottom: 20px;
+    display: block;
 }
+
 
 .title-for-projects {
  font-weight: 700;
@@ -333,3 +344,8 @@ line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--header-color); 
 margin-bottom: 4px; }
+
+.portfolio-decription {
+    padding: 20px 24px;
+    border: 1px solid #ECECEC;
+}
